@@ -1,0 +1,43 @@
+.storybook-select-wrapper {
+display: flex;
+flex-direction: column;
+gap: 8px;
+width: 100%;
+max-width: 350px;
+}
+
+.storybook-select-wrapper label {
+font-size: 14px;
+font-weight: 600;
+}
+
+.storybook-select {
+padding: 12px 14px;
+border: 1px solid #cbd5e1;
+border-radius: 8px;
+font-size: 14px;
+background: white;
+cursor: pointer;
+outline: none;
+transition: 0.3s;
+}
+
+.storybook-select:focus {
+border-color: #8b5cf6;
+box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+
+.storybook-select:disabled {
+background: #e5e7eb;
+cursor: not-allowed;
+}
+
+.storybook-select.error {
+border-color: #ef4444;
+}
+
+.select-error {
+color: #ef4444;
+font-size: 12px;
+margin: 0;
+}

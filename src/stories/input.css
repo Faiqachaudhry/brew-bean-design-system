@@ -1,0 +1,41 @@
+.storybook-input-wrapper {
+display: flex;
+flex-direction: column;
+gap: 8px;
+width: 100%;
+max-width: 350px;
+}
+
+.storybook-input-wrapper label {
+font-size: 14px;
+font-weight: 600;
+}
+
+.storybook-input {
+padding: 12px 14px;
+border: 1px solid #cbd5e1;
+border-radius: 8px;
+font-size: 14px;
+outline: none;
+transition: 0.3s;
+}
+
+.storybook-input:focus {
+border-color: #8b5cf6;
+box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+
+.storybook-input:disabled {
+background: #e5e7eb;
+cursor: not-allowed;
+}
+
+.storybook-input.error {
+border-color: #ef4444;
+}
+
+.input-error {
+color: #ef4444;
+font-size: 12px;
+margin: 0;
+}
