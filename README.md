@@ -1,102 +1,66 @@
-Brew & Bean Cafe – Design System
+Brew & Bean Design System – Task 3
 About the Project
-Brew & Bean Cafe Design System is a reusable and themable React-based UI library designed to maintain consistent branding, accessibility, and styling across digital products.
+Brew & Bean Design System is a React and TypeScript-based project that demonstrates reusable and accessible UI components with light and dark theme support.
 
-Features
-Design tokens for colours, spacing, and typography
-Light and Dark theme support
-React ThemeProvider
-CSS Variables-based theming
-Theme preference saved using localStorage
-Reusable Button component
-Reusable Input component
-Reusable Select component
-Multiple component variants and states
-Storybook component documentation
-Keyboard navigation support
-ARIA accessibility attributes
-Accessibility testing with zero reported violations in tested stories
 Components
-Button
-Primary and Secondary variants
-Small, Medium, and Large sizes
-Disabled state
-Click event support
-Input
-Text, Email, Password, and Number types
-Required state
-Disabled state
-Error message support
-Select
-Custom dropdown options
-Selected state
-Required state
-Disabled state
-Error message support
+1. Modal Component
+Renders modal content using React Portal.
+Supports opening and closing.
+Closes using the Escape key.
+Supports clicking outside to close.
+Implements keyboard focus trapping.
+Restores focus to the previously focused element.
+Includes accessible dialog attributes.
+2. Table Component
+Displays coffee order information.
+Supports sorting by column headers.
+Supports ascending and descending sorting.
+Handles numeric and text values.
+Displays an empty state when no data is available.
+Includes accessible sorting attributes.
+Data Generation
+Includes a generate-data.js script.
+Generates 12 sample coffee orders.
+Saves generated data in src/data/orders.json.
+Run the script using:
+
+node generate-data.js
 Technologies Used
 React
 TypeScript
 Vite
-CSS3
+CSS
+Storybook
 JSON
 Storybook
-LocalStorage
-Project Structure
-brew-bean-design-system/
-├── public/
-├── src/
-│   ├── components/
-│   │   └── ThemeProvider.jsx
-│   ├── stories/
-│   │   ├── Button.tsx
-│   │   ├── button.css
-│   │   ├── Button.stories.ts
-│   │   ├── Input.tsx
-│   │   ├── input.css
-│   │   ├── Input.stories.ts
-│   │   ├── Select.tsx
-│   │   ├── select.css
-│   │   └── Select.stories.ts
-│   ├── styles/
-│   ├── App.jsx
-│   └── main.jsx
-├── .storybook/
-│   └── preview.tsx
-├── tokens.json
-├── Decision-log.md
-├── README.md
-└── package.json
-Installation
-Clone the repository:
+The project includes Storybook stories for:
 
-git clone https://github.com/Faiqachaudhry/brew-bean-design-system.git
-Install dependencies:
-
-npm install
-Start the development server:
-
-npm run dev
-Start Storybook:
+Modal: OpenClose
+Table: Sorting
+Table: Empty
+Run Storybook using:
 
 npm run storybook
-Theming Strategy
-The project uses CSS Variables managed through a React ThemeProvider. Users can switch between Light and Dark themes, and their preference is stored in localStorage.
+Build
+To create a production build, run:
 
-Design tokens are maintained in tokens.json to ensure consistent colours, spacing, and typography.
-
-Accessibility
-Keyboard navigation support
-Visible focus indicators
-ARIA labels and attributes
-Accessible colour contrast
-Accessibility checks through Storybook
+npm run build
+Project Structure
+brew-bean-design-system/
+├── src/
+│   ├── components/
+│   │   ├── Modal.tsx
+│   │   ├── modal.css
+│   │   ├── Table.tsx
+│   │   └── table.css
+│   ├── data/
+│   │   └── orders.json
+│   └── stories/
+│       ├── Modal.stories.tsx
+│       └── Table.stories.tsx
+├── generate-data.js
+├── tokens.json
+└── package.json
 Author
 Faiqa Abbas
-
-Frontend Development Intern
-
-Project
-Brew & Bean Cafe – Task 1: Design Tokens and Theming Strategy
-
-Brew & Bean Cafe – Task 2: Reusable UI Components and Storybook Documentation
 

@@ -1,0 +1,32 @@
+import fs from "node:fs";
+import path from "node:path";
+
+const orders = [
+{ id: 1, customer: "Ayesha", coffee: "Cappuccino", quantity: 2, price: 700, status: "Completed" },
+{ id: 2, customer: "Ali", coffee: "Latte", quantity: 1, price: 450, status: "Pending" },
+{ id: 3, customer: "Sara", coffee: "Espresso", quantity: 3, price: 600, status: "Completed" },
+{ id: 4, customer: "Ahmed", coffee: "Mocha", quantity: 2, price: 800, status: "Pending" },
+{ id: 5, customer: "Fatima", coffee: "Americano", quantity: 1, price: 300, status: "Completed" },
+{ id: 6, customer: "Usman", coffee: "Flat White", quantity: 2, price: 650, status: "Cancelled" },
+{ id: 7, customer: "Zara", coffee: "Cold Brew", quantity: 1, price: 500, status: "Completed" },
+{ id: 8, customer: "Hamza", coffee: "Macchiato", quantity: 3, price: 750, status: "Pending" },
+{ id: 9, customer: "Mariam", coffee: "Caramel Latte", quantity: 2, price: 900, status: "Completed" },
+{ id: 10, customer: "Bilal", coffee: "Iced Coffee", quantity: 1, price: 400, status: "Pending" },
+{ id: 11, customer: "Noor", coffee: "Vanilla Latte", quantity: 2, price: 850, status: "Completed" },
+{ id: 12, customer: "Hassan", coffee: "Double Espresso", quantity: 1, price: 350, status: "Cancelled" }
+];
+
+const outputDirectory = path.join("src", "data");
+
+fs.mkdirSync(outputDirectory, { recursive: true });
+
+const outputPath = path.join(outputDirectory, "orders.json");
+
+fs.writeFileSync(
+outputPath,
+JSON.stringify(orders, null, 2),
+"utf-8"
+);
+
+console.log("12 coffee orders generated successfully!");
+
