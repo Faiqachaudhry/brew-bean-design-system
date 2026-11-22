@@ -64,3 +64,23 @@ brew-bean-design-system/
 Author
 Faiqa Abbas
 
+## Lighthouse Performance
+
+Lighthouse CI was run 3 times to evaluate the Storybook site.
+
+| Category | Score |
+|---|---:|
+| Performance | 53 |
+| Accessibility | 87 |
+| Best Practices | 100 |
+| SEO | 90 |
+
+Performance score is the average of 3 Lighthouse runs (46, 48, and 66).
+
+### Tools
+- Storybook
+- Lighthouse CI
+- React
+- Vite
+- Netlify
+
