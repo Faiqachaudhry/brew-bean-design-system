@@ -71,7 +71,7 @@ Lighthouse CI was run 3 times to evaluate the Storybook site.
 | Category | Score |
 |---|---:|
 | Performance | 53 |
-| Accessibility | 87 |
+| Accessibility | 90 |
 | Best Practices | 100 |
 | SEO | 90 |
 
