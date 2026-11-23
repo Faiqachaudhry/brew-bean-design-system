@@ -84,3 +84,9 @@ Performance score is the average of 3 Lighthouse runs (46, 48, and 66).
 - Vite
 - Netlify
 
+[![Live Docs](https://img.shields.io/badge/Storybook-Live_Docs-FF4785?logo=storybook&logoColor=white)](https://storybookbrewbean.netlify.app/)
+
+![Performance](https://img.shields.io/badge/Performance-30-orange)
+![Accessibility](https://img.shields.io/badge/Accessibility-100-brightgreen)
+![Best Practices](https://img.shields.io/badge/Best_Practices-100-brightgreen)
+![SEO](https://img.shields.io/badge/SEO-90-brightgreen)
